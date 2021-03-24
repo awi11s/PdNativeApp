@@ -1,9 +1,5 @@
 import React from 'react';
-import { Icon } from 'react-native-vector-icons';
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+// import { Icon } from 'react-native-vector-icons/FontAwesome';
+// import { createBottomTabNavigator } from 'react-navigation';
+import { MainPage } from '../pages/MainPage';
 
-export const MainPage = (props) => {
-    return {
-        // components that will be on home page go here
-    }
-}
