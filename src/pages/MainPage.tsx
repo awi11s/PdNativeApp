@@ -6,10 +6,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import { colors } from '../constants/pdstyle'
-// import { 
-//     useFonts,
-//     AnticSlab_400Regular 
-//   } from '@expo-google-fonts/antic-slab';
+import { BottomNav } from '../components/BottomNav'
 
   interface Props {
     navigation: any
@@ -17,14 +14,11 @@ import { colors } from '../constants/pdstyle'
 
 export const MainPage: React.FC<Props> = (props) => {
     
-    // initializing fonts
-    // let [fontsLoaded] = useFonts({
-    //     AnticSlab_400Regular
-    //   });
 
     const { navigation } = props;
 
     return (
+        <>
         <View style={styles.container}>
             <Text style={styles.text}>PresentDay</Text>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Login')}>
@@ -33,8 +27,11 @@ export const MainPage: React.FC<Props> = (props) => {
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('SignUp')}>
                 <Text style={styles.buttonText}>Sign Up</Text>
             </TouchableOpacity>
+           
         </View>
-    )
+        <BottomNav />
+        </>
+    );
 }
 
 const styles = StyleSheet.create({

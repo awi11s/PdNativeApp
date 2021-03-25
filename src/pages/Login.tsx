@@ -6,17 +6,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import { colors } from '../constants/pdstyle'
-import { 
-    useFonts,
-    AnticSlab_400Regular 
-  } from '@expo-google-fonts/antic-slab';
+
 
 
 export const LoginPage: React.FC = () => {
 
-    let [fontsLoaded] = useFonts({
-        AnticSlab_400Regular
-      });
 
     return (
         <View style={styles.container}>
@@ -37,7 +31,6 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     text: {
-        fontFamily: "AnticSlab_400Regular",
         fontSize: 25,
     }
 });
