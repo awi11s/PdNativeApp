@@ -6,7 +6,6 @@ import {
 } from 'react-native';
 import React from 'react';
 import { colors } from '../constants/pdstyle'
-import { BottomNav } from '../components/BottomNav'
 
   interface Props {
     navigation: any
@@ -27,9 +26,10 @@ export const MainPage: React.FC<Props> = (props) => {
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('SignUp')}>
                 <Text style={styles.buttonText}>Sign Up</Text>
             </TouchableOpacity>
-           
+            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('BibleMain')}>
+                <Text style={styles.buttonText}>To Bible</Text>
+            </TouchableOpacity>
         </View>
-        <BottomNav />
         </>
     );
 }

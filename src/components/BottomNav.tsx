@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native'
-// import { useNavigation } from "@react-navigation/core"
-// import Icon from '@react-navigation/core'
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { colors } from '../constants/pdstyle'
 import { SafeAreaView } from 'react-native-safe-area-context';
