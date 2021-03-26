@@ -26,7 +26,7 @@ export const MainPage: React.FC<Props> = (props) => {
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('SignUp')}>
                 <Text style={styles.buttonText}>Sign Up</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('BibleMain')}>
+            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('BibleModal')}>
                 <Text style={styles.buttonText}>To Bible</Text>
             </TouchableOpacity>
         </View>

@@ -3,6 +3,7 @@ import { StyleSheet, Text, SafeAreaView, ScrollView, StatusBar } from 'react-nat
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { BibleHeader } from '../components/BibleHeader'
 import { genesis1 } from '../constants/data/genesis1'
+import { colors } from '../constants/pdstyle'
 
 
 export const BibleMain: React.FC = () => {
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
   },
   scrollView: {
-    backgroundColor: 'pink',
+    backgroundColor: colors.cream,
     marginHorizontal: 20,
   },
   text: {
