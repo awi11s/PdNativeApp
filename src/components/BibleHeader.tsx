@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     safeAreaView: {
         justifyContent: "space-between",
         alignItems: "center",
-        backgroundColor: colors.maroon,
+        backgroundColor: colors.cream,
     },
     container: {
         flex: 1,
